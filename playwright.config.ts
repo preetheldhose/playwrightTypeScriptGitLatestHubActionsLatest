@@ -1,7 +1,7 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/loginPageObject.test.ts"],
+  testMatch: ["tests/login.test.ts"],
   use: {
     headless: true, // Run in headed mode
     browserName: 'chromium', // Change to 'firefox' or 'webkit' if needed
