@@ -3,7 +3,7 @@ import type { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testMatch: ["tests/loginPageObject.test.ts"],
   use: {
-    headless: false, // Run in headed mode
+    headless: true, // Run in headed mode
     browserName: 'chromium', // Change to 'firefox' or 'webkit' if needed
     video: 'on', // Enable video recording for all tests
     trace: 'on', // Enable tracing for debugging
