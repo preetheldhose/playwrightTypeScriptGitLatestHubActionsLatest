@@ -1,0 +1,162 @@
+{
+  "config": {
+    "configFile": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/playwright.config.ts",
+    "rootDir": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/loginPageObject.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.51.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests/loginPageObject.test.ts",
+      "file": "tests/loginPageObject.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login demo test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "interrupted",
+                  "duration": 30022,
+                  "error": {
+                    "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//span[normalize-space()=\\'Login\\']')\u001b[22m\n\u001b[2m    - locator resolved to <span class=\"title\"> Login↵</span>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    36 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+                    "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//span[normalize-space()=\\'Login\\']')\u001b[22m\n\u001b[2m    - locator resolved to <span class=\"title\"> Login↵</span>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    36 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n    at LoginClass.loginHandler (/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/pageObject/login.control.ts:27:70)\n    at /Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/tests/loginPageObject.test.ts:17:5",
+                    "location": {
+                      "file": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/pageObject/login.control.ts",
+                      "column": 70,
+                      "line": 27
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39mpageObject/login.control.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyAccount\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//span[normalize-space()='Login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(\u001b[32m\"koushik350@gmail.com\"\u001b[39m)\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/pageObject/login.control.ts",
+                        "column": 70,
+                        "line": 27
+                      },
+                      "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('//span[normalize-space()=\\'Login\\']')\u001b[22m\n\u001b[2m    - locator resolved to <span class=\"title\"> Login↵</span>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    36 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpageObject/login.control.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForTimeout(\u001b[35m5000\u001b[39m)\n \u001b[90m 26 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmyAccount\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//span[normalize-space()='Login']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memail\u001b[33m.\u001b[39mfill(\u001b[32m\"koushik350@gmail.com\"\u001b[39m)\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginClass.loginHandler (/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/pageObject/login.control.ts:27:70)\u001b[22m\n\u001b[2m    at /Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/tests/loginPageObject.test.ts:17:5\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-03-11T17:20:03.215Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/test-results/tests-loginPageObject-Login-demo-test/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/test-results/tests-loginPageObject-Login-demo-test/video.webm"
+                    },
+                    {
+                      "name": "_prompt-0",
+                      "contentType": "text/markdown",
+                      "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBMb2dpbiBkZW1vIHRlc3QKLSBMb2NhdGlvbjogL1VzZXJzL3ByZWV0aGVsZGhvc2UvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3MvRGVza3RvcC9CaXNtaWxsYWgvV29yay9Qcm9ncmFtbWluZy9QbGF5d3JpZ2h0L0xhdGVzdC9sZWFybi1wbGF5d3JpZ2h0L3Rlc3RzL2xvZ2luUGFnZU9iamVjdC50ZXN0LnRzOjE2OjUKCiMgRXJyb3IgZGV0YWlscwoKYGBgCkVycm9yOiBsb2NhdG9yLmNsaWNrOiBUYXJnZXQgcGFnZSwgY29udGV4dCBvciBicm93c2VyIGhhcyBiZWVuIGNsb3NlZApDYWxsIGxvZzoKICAtIHdhaXRpbmcgZm9yIGxvY2F0b3IoJy8vc3Bhbltub3JtYWxpemUtc3BhY2UoKT1cJ0xvZ2luXCddJykKICAgIC0gbG9jYXRvciByZXNvbHZlZCB0byA8c3BhbiBjbGFzcz0idGl0bGUiPiBMb2dpbuKGtTwvc3Bhbj4KICAtIGF0dGVtcHRpbmcgY2xpY2sgYWN0aW9uCiAgICAyIMOXIHdhaXRpbmcgZm9yIGVsZW1lbnQgdG8gYmUgdmlzaWJsZSwgZW5hYmxlZCBhbmQgc3RhYmxlCiAgICAgIC0gZWxlbWVudCBpcyBub3QgdmlzaWJsZQogICAgLSByZXRyeWluZyBjbGljayBhY3Rpb24KICAgIC0gd2FpdGluZyAyMG1zCiAgICAyIMOXIHdhaXRpbmcgZm9yIGVsZW1lbnQgdG8gYmUgdmlzaWJsZSwgZW5hYmxlZCBhbmQgc3RhYmxlCiAgICAgIC0gZWxlbWVudCBpcyBub3QgdmlzaWJsZQogICAgLSByZXRyeWluZyBjbGljayBhY3Rpb24KICAgICAgLSB3YWl0aW5nIDEwMG1zCiAgICAzNiDDlyB3YWl0aW5nIGZvciBlbGVtZW50IHRvIGJlIHZpc2libGUsIGVuYWJsZWQgYW5kIHN0YWJsZQogICAgICAgLSBlbGVtZW50IGlzIG5vdCB2aXNpYmxlCiAgICAgLSByZXRyeWluZyBjbGljayBhY3Rpb24KICAgICAgIC0gd2FpdGluZyA1MDBtcwogICAgLSB3YWl0aW5nIGZvciBlbGVtZW50IHRvIGJlIHZpc2libGUsIGVuYWJsZWQgYW5kIHN0YWJsZQoKICAgIGF0IExvZ2luQ2xhc3MubG9naW5IYW5kbGVyICgvVXNlcnMvcHJlZXRoZWxkaG9zZS9MaWJyYXJ5L01vYmlsZSBEb2N1bWVudHMvY29tfmFwcGxlfkNsb3VkRG9jcy9EZXNrdG9wL0Jpc21pbGxhaC9Xb3JrL1Byb2dyYW1taW5nL1BsYXl3cmlnaHQvTGF0ZXN0L2xlYXJuLXBsYXl3cmlnaHQvcGFnZU9iamVjdC9sb2dpbi5jb250cm9sLnRzOjI3OjcwKQogICAgYXQgL1VzZXJzL3ByZWV0aGVsZGhvc2UvTGlicmFyeS9Nb2JpbGUgRG9jdW1lbnRzL2NvbX5hcHBsZX5DbG91ZERvY3MvRGVza3RvcC9CaXNtaWxsYWgvV29yay9Qcm9ncmFtbWluZy9QbGF5d3JpZ2h0L0xhdGVzdC9sZWFybi1wbGF5d3JpZ2h0L3Rlc3RzL2xvZ2luUGFnZU9iamVjdC50ZXN0LnRzOjE3OjUKYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgTG9jYXRvciwgUGFnZSwgZXhwZWN0IH0gZnJvbSAiQHBsYXl3cmlnaHQvdGVzdCI7CiAgIDIgfAogICAzIHwgZXhwb3J0IGNsYXNzIExvZ2luQ2xhc3MgewogICA0IHwgICAgIHJlYWRvbmx5IGxvZ2luOiBMb2NhdG9yOwogICA1IHwgICAgIHJlYWRvbmx5IG15QWNjb3VudDogTG9jYXRvcjsKICAgNiB8ICAgICByZWFkb25seSBzZWFyY2g6IExvY2F0b3I7CiAgIDcgfCAgICAgcmVhZG9ubHkgZW1haWw6IExvY2F0b3I7CiAgIDggfAogICA5IHwgICAgIGNvbnN0cnVjdG9yKHB1YmxpYyBwYWdlOiBQYWdlKSB7CiAgMTAgfCAgICAgICAgIHRoaXMucGFnZSA9IHBhZ2U7CiAgMTEgfCAgICAgICAgIHRoaXMubXlBY2NvdW50ID0gcGFnZS5sb2NhdG9yKCIvL2FbQGRhdGEtdG9nZ2xlPSdkcm9wZG93biddLy9zcGFuW2NvbnRhaW5zKC4sJ015IGFjY291bnQnKV0iKTsKICAxMiB8ICAgICAgICAgdGhpcy5sb2dpbiA9IHBhZ2UubG9jYXRvcigiLy9zcGFuW25vcm1hbGl6ZS1zcGFjZSgpPSdMb2dpbiddIikKICAxMyB8ICAgICAgICAgdGhpcy5lbWFpbCA9IHBhZ2UubG9jYXRvcigiLy9pbnB1dFtAaWQ9J2lucHV0LWVtYWlsJ10iKTsgCiAgMTQgfCAgICAgICAgIC8vIGF3YWl0IHBhZ2UuZmlsbCgiaW5wdXRbbmFtZT0nZW1haWwnXSIsICJrb3VzaGlrMzUwQGdtYWlsLmNvbSIpCiAgMTUgfCAgICAgICAgIC8vIGF3YWl0IHBhZ2UuZmlsbCgiaW5wdXRbbmFtZT0ncGFzc3dvcmQnXSIsICJQYXNzMTIzJCIpCiAgMTYgfCAgICAgICAgIC8vIGF3YWl0IHBhZ2UuY2xpY2soImlucHV0W3ZhbHVlPSdMb2dpbiddIik7CiAgMTcgfCAgICAgfQogIDE4IHwKICAxOSB8ICAgICBhc3luYyBnb3RvVVJMKCkgewogIDIwIHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UuZ290bygnaHR0cHM6Ly9lY29tbWVyY2UtcGxheWdyb3VuZC5sYW1iZGF0ZXN0LmlvLycpCiAgMjEgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS53YWl0Rm9yVVJMKC8uKmxhbWJkYXRlc3QqLywge3dhaXRVbnRpbDogImRvbWNvbnRlbnRsb2FkZWQifSkKICAyMiB8ICAgICB9CiAgMjMgfAogIDI0IHwgICAgIHB1YmxpYyBhc3luYyBsb2dpbkhhbmRsZXIoKSB7CiAgMjUgfCAgICAgICAgIGF3YWl0IHRoaXMucGFnZS53YWl0Rm9yVGltZW91dCg1MDAwKQogIDI2IHwgICAgICAgICBhd2FpdCB0aGlzLm15QWNjb3VudC5jbGljaygpOwo+IDI3IHwgICAgICAgICBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcigiLy9zcGFuW25vcm1hbGl6ZS1zcGFjZSgpPSdMb2dpbiddIikuY2xpY2soKTsKICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF4gRXJyb3I6IGxvY2F0b3IuY2xpY2s6IFRhcmdldCBwYWdlLCBjb250ZXh0IG9yIGJyb3dzZXIgaGFzIGJlZW4gY2xvc2VkCiAgMjggfCAgICAgICAgIGF3YWl0IHRoaXMuZW1haWwuY2xpY2soKTsKICAyOSB8ICAgICAgICAgYXdhaXQgdGhpcy5lbWFpbC5maWxsKCJrb3VzaGlrMzUwQGdtYWlsLmNvbSIpCiAgMzAgfAogIDMxIHwgICAgIH0KICAzMiB8IH0KYGBg"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/test-results/tests-loginPageObject-Login-demo-test/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/preetheldhose/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Bismillah/Work/Programming/Playwright/Latest/learn-playwright/pageObject/login.control.ts",
+                    "column": 70,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "b31fb7533bb6779ed4d2-4503e62c27240b0a346d",
+          "file": "tests/loginPageObject.test.ts",
+          "line": 16,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-03-11T17:20:02.161Z",
+    "duration": 32366.686999999998,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
